@@ -1,7 +1,7 @@
 def create_layers(layers):
     """
-    Create an output according to the given number of layers, with 'A' as the outermost layer
-    and subsequent layers moving inward with the next letters in the alphabet.
+    Create an output according to the given number of layers, with 'A' as the innermost layer
+    and subsequent layers moving outward with the next letters in the alphabet.
     """
     # Calculate the size of the grid
     size = layers * 2 - 1
@@ -23,7 +23,7 @@ def create_layers(layers):
     return "\n".join("".join(row) for row in grid)
 
 
-if __name__ == "__main__":
+def main():
     while True:
         layers = input("How many layers (1-26), exit with 0: ")
         if layers.isnumeric() and int(layers) > 0 and int(layers) <= 26:
@@ -35,3 +35,7 @@ if __name__ == "__main__":
             break
         else:
             print("Invalid input. Try again." + "\n")
+
+
+if __name__ == "__main__":
+    main()
