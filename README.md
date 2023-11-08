@@ -10,7 +10,7 @@ This project includes a simple Python program that generates a pattern based on 
 
 ## Prerequisites
 
-- Python 3
+- Python 3.6+
 - pip
 - virtualenv (optional but recommended)
 

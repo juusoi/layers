@@ -1,4 +1,4 @@
-def create_layers(layers):
+def create_layers(layers: int) -> str:
     """
     Create an output according to the given number of layers, with 'A' as the innermost layer
     and subsequent layers moving outward with the next letters in the alphabet.
